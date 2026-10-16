@@ -1,0 +1,6 @@
+with open('student.csv','w',newline='') as file:   # you can give the path for it also where you want to create the csv file
+    w = csv.writer(file)
+    w.writerow(['Name','Age','Salary'])
+    w.writerows([["shivam",24,35000],["danish",22,30000],["Falguni",21,36000]])
+
+print("file created successfully")
